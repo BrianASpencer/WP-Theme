@@ -1,0 +1,199 @@
+/* Global Page Styling */
+.wpForo-body {
+    min-height: 80vh;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Helvetica', sans-serif;
+    padding: 0;
+    display: flex;
+    min-height: calc(100vh - 2%);
+    flex-direction: column; /* Set flex layout to vertical column */
+    overflow-x: hidden;
+    width: calc(100vw - 2%);
+    margin-left: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styling */
+.site-header {
+    margin: 0 7%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.logo {
+    flex: 1;
+    max-width: 33%;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+}
+
+/* Menu Styling */
+
+.main-navigation {
+    flex: 2;
+    max-width: 67%;
+    text-align: right;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-navigation a {
+    color: #0B445E;
+    font-weight: bold;
+}
+
+.main-navigation a:hover {
+    color: #585858 !important; 
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #0B445E;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    padding: 25px 0;
+    margin: 0; /* Remove margin to prevent unwanted spacing */
+    margin-bottom: -2%;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-link {
+    color: white;
+    font-size: small;
+}
+
+/* Login-page Styling */
+.login-container {
+    background-color: white !important;
+    border: 2px solid #0B445E !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    width: 40%; /* Set the width to 40% of the viewport */
+    margin: 0 auto !important; /* Center the container horizontally */
+    display: flex; /* Use flex layout */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.welcome-header {
+    font-weight: bold !important;
+    color: #000 !important;
+    margin-bottom: 10px !important;
+}
+
+.intro-text {
+    color: #888 !important;
+    font-size: 14px !important;
+    margin-bottom: 20px !important;
+}
+
+.login-form {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.label-input-pair {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 15px !important;
+}
+
+label {
+    color: #fff !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+}
+
+
+/* Login-page Styling */
+.login-container {
+    background-color: white !important;
+    border: 2px solid #0B445E !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    width: 40%; /* Set the width to 40% of the viewport */
+    margin: 0 auto !important; /* Center the container horizontally */
+}
+
+.login-form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.label-input-pair {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 15px !important;
+}
+
+label {
+    color: #0B445E !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+}
+
+.login-field {
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    margin-top: 5px !important;
+}
+
+.forgot-password-link {
+    color: #007EB5 !important;
+    margin-top: 5px !important;
+    margin-bottom: 20px !important;
+    text-align: left !important;
+}
+
+.sign-in-button {
+    background-color: #0B445E !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    width: 100% !important; /* Set the width to 100% of the parent container */
+}
+
+.recaptcha-text {
+    color: #000 !important;
+    font-size: 12px !important;
+    margin-top: 20px !important;
+}
