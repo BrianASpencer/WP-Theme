@@ -10,3 +10,6 @@ On windows, this is typically: C:\MAMP\htdocs\wordpress\wp-content\themes
 # Troubleshooting
 Forum post about adding a new page template:
 https://wpforo.com/community/how-to-and-troubleshooting-2/how-to-add-a-page-template/
+
+Lost password not working:
+https://wpforo.com/community/how-to-and-troubleshooting-2/lost-your-password-bug/
