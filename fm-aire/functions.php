@@ -40,10 +40,29 @@ add_action('after_setup_theme', 'setup');
 add_action('wp_enqueue_scripts', 'scripts_header');
 //add_action('wp_footer', 'scripts_footer');
 
-/* Shortcodes */
-//require_once('shortcodes/practice-areas.php');
-//require_once('shortcodes/team.php');
 
-//31:40 seems very important to do.
+/* Shortcodes */
+
+/*
+function wpforo_page_show_courses( $template ){
+   if( $template == 'contact-us' ){
+        include_once get_template_directory() . '/custom/contact-us.php';
+   }
+}
+add_action( 'wpforo_page', 'wpforo_page_show_courses', 10 );
+*/
+
+function set_contact_us_template($template) {
+    if (is_page('contact-us')) {
+        $new_template = locate_template(array('contact-us-template.php'));
+        if (!empty($new_template)) {
+            return $new_template;
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'set_contact_us_template');
+
+
 
 ?>
