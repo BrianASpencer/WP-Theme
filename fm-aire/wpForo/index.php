@@ -14,14 +14,15 @@ if ( is_front_page() ) {
 <?php
     include_once get_template_directory() . '/custom/contact-us.php';
 ?>
-<br><br>
 <?php
     include_once get_template_directory() . '/custom/login.php';
 ?>
-<br><br>
 <?php
     
     if ( WPF()->board->get_current( 'is_standalone' ) ) get_footer();
+    exit();
+} else if (is_custom_login_page()) {
+    include_once get_template_directory() . '/custom/login.php';
     exit();
 }
 

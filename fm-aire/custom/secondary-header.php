@@ -1,3 +1,10 @@
+<?php
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit;
+}
+?>
+
 <div class="header-content">
     <div class="logo">
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">

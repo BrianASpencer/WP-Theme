@@ -6,34 +6,38 @@ if (!defined('ABSPATH')) {
 ?>
 
 <style>
-    <?php include 'styling/contact-us.css'; ?>
+    <?php 
+        include 'styling/contact-us.css'; 
+    ?>
 </style>
 
 <div id="contact-form-container">
     <h2 id="form-header">Contact Us</h2>
     <form id="contact-form">
-        <div class="form-row">
-            <label for="full-name">Full Name</label>
-            <input type="text" id="full-name" name="full-name" class="contact-input" required>
-        </div>
+        <div id="form-inputs">
+            <div class="form-row">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" class="contact-input" required>
+            </div>
 
-        <div class="form-row">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" class="contact-input" required>
-        </div>
+            <div class="form-row">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="contact-input" required>
+            </div>
 
-        <div class="form-row">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" class="contact-input" required>
-        </div>
+            <div class="form-row">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" class="contact-input" required>
+            </div>
 
-        <div class="form-row">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" class="contact-input" required></textarea>
-        </div>
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" class="contact-input" required></textarea>
+            </div>
 
-        <div class="form-row">
-            <button type="button" id="submit-btn" onclick="submitForm()">SEND IT!</button>
+            <div class="form-row">
+                <button type="button" id="submit-btn" onclick="submitForm()">SEND IT!</button>
+            </div>
         </div>
     </form>
     

@@ -4,9 +4,8 @@
     border: 1px solid #EAEDF5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    width: 70%;
-    margin-left: 25%;
-    margin-right: auto;
+    width: 25%;
+    margin: 0 auto;
 }
 
 #contact-form-container h2 {
@@ -14,6 +13,10 @@
     color: #3368B8;
     margin-bottom: 1.5em;
     text-align: center;
+}
+
+#form-inputs {
+    margin-left: 10%;
 }
 
 .form-row {
@@ -29,10 +32,14 @@ label {
 }
 
 .contact-input {
-    width: 100%;
-    padding: 8px;
+    width: 90%;
+    padding: 15px;
     border: 1px solid #EAEDF5;
     border-radius: 5px;
+}
+
+#message {
+    width: 85%;
 }
 
 #submit-btn {
@@ -48,3 +55,23 @@ label {
     display: none;
     text-align: center;
 }
+
+/* Responsive Styling */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    #contact-form-container {
+        width: 30%;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1367px) {
+    #contact-form-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact-form-container {
+        width: 80%;
+    }
+}
+

@@ -6,7 +6,8 @@ if (!defined('ABSPATH')) {
 ?>
 
 <style>
-    <?php include 'styling/login.css';
+    <?php 
+        include 'styling/login.css';
     ?>
 
 </style>

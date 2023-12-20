@@ -36,6 +36,10 @@ function scripts_footer(){
     //wp_enqueue_script('init', get_template_directory_uri().'/js/init.js', array('jquery'));
 }
 
+function is_custom_login_page() {
+    return strpos($_SERVER['REQUEST_URI'], '/sign-in') !== false;
+}
+
 add_action('after_setup_theme', 'setup');
 add_action('wp_enqueue_scripts', 'scripts_header');
 //add_action('wp_footer', 'scripts_footer');

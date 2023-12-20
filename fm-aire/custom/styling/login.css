@@ -4,28 +4,31 @@
     border: 1px solid #EAEDF5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
-    width: 70%;
-    margin-left: 25%;
-    margin-right: auto;
-    margin-bottom: 0;
+    width: 30%;
+    margin: 5em auto;
 }
 
 .form-header {
     font-size: 32px;
     color: #3368B8;
-    margin-bottom: 1em;
     text-align: center;
     font-weight: bold;
+    margin-top: 25px;
 }
 
 .form-description {
+    font-size: 16px;
+    width: 35%;
     color: #333;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
     margin-bottom: 1.5em;
 }
 
 .login-inputs {
-    margin-left: 25%;
+    margin-left: 17.5%;
 }
 
 .form-row {
@@ -44,34 +47,60 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 14px;
 }
 
 .forgot-password {
     font-size: 14px;
     margin-top: -10px;
-    margin-bottom: 15px;
-    margin-left: 5px;
     color: #3368B8;
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 2.5em;
 }
 
 .recaptcha-text {
-    width: 50%;
+    width: 60%;
     color: #000 ;
-    font-size: 12px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin: 2.5em auto;
     text-align: center;
 }
 
 .sign-in-btn {
     background-color: #3368B8;
     color: #fff;
-    padding: 10px 15px;
+    padding: 25px 15px;
     border: none;
     border-radius: 0 0 4px 4px;
     cursor: pointer;
     width: 100%;
     margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Responsive Styling */
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .login-form {
+        width: 35%;
+    }
+    
+}
+@media (min-width: 1000px) and (max-width: 1367px) {
+    .login-form {
+        width: 50%;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .login-form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-form {
+        width: 90%;
+    }
 }

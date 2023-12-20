@@ -4,7 +4,7 @@ Theme URI: https://theabfm.org
 Description: A theme for FM-AIRE.
 Author: Brian Spencer
 Author URI: https://theabfm.org
-Version: 1.0
+Version: 0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -15,12 +15,8 @@ body {
     font-family: 'Proxima Nova', sans-serif;
 }
 
-.wpForo-body {
-    min-height: 80vh;
-    margin-left: 9%;
-    margin-right: 9%;
-}
 
+/*
 body {
     background-color: #FAFAFA;
     color: #333333;
@@ -28,10 +24,14 @@ body {
     display: flex;
     min-height: calc(100vh - 2%);
     flex-direction: column;
-    /* Set flex layout to vertical column */
     overflow-x: hidden;
     width: calc(100vw - 18%);
     margin-left: 0;
     margin-right: auto;
 }
-
+*/
+body {
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    margin: 0 !important;
+}

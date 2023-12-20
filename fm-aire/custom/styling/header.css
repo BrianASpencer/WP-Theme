@@ -2,7 +2,6 @@
 .site-header {
     background-color: #DA222B;
     color: #ffffff;
-    width: 100vw;
 }
 
 /* Top Header */
@@ -26,7 +25,6 @@
 }
 
 .top-header-nav {
-    margin-left: 9%;
     max-width: 80%;
 }
 
@@ -37,7 +35,6 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin-right: 10%;
 }
 
 /* Red Header */
@@ -45,7 +42,6 @@
     flex: 2;
     max-width: 80%;
     text-align: right;
-    margin-right: 9%;
 }
 
 .secondary-navigation ul {
@@ -95,19 +91,4 @@
     max-width: 200px;
     height: auto;
     display: block;
-}
-
-
-@media (min-width: 768px) and (max-width: 1367px) {
-    .top-header-nav {
-        margin-left: 10%;
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .top-header-nav {
-        margin-left: 12%;
-        max-width: 80%;
-    }
 }

@@ -3,6 +3,7 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+wp_footer();
 ?>
 
 <style>
@@ -24,7 +25,7 @@ if (!defined('ABSPATH')) {
         <strong>
             1-866-123-1234
         </strong>
-        <span>
+        <span style="font-weight: lighter">
             &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         </span>
         <strong>

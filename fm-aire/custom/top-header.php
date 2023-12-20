@@ -1,3 +1,10 @@
+<?php
+// Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit;
+}
+?>
+
 <div class="top-header">
     <div class="top-header-nav">
         <a href="#">About Us</a>
