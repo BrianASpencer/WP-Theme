@@ -4,8 +4,9 @@ You can paste this directly in the directory where themes are located.
 
 On windows, this is typically: C:\MAMP\htdocs\wordpress\wp-content\themes
 
-# Setup
+There are some changes made to files (like index.php) within the wpForo folder within the theme files.
 
+# Setup
 
 # Troubleshooting
 Forum post about adding a new page template:
