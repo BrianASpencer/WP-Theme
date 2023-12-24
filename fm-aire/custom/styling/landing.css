@@ -44,20 +44,20 @@
     padding: 20px;
 }
 
-ul {
+.info-column ul {
     list-style: none;
     padding: 0;
 }
 
-li {
+.info-column li {
     margin-bottom: 20px;
 }
 
-h2 {
+.info-column h2 {
     margin-bottom: 10px;
 }
 
-p {
+.info-column p {
     margin: 0;
 }
 

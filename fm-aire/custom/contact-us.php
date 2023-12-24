@@ -11,10 +11,6 @@ if (!defined('ABSPATH')) {
     ?>
 </style>
 
-<?php 
-    get_header();
-?>
-
 <div id="contact-form-container">
     <h2 id="form-header">Contact Us</h2>
     <form id="contact-form">
@@ -81,6 +77,6 @@ if (!defined('ABSPATH')) {
     }
 </script>
 
-<?php 
+<?php
     get_footer();
 ?>

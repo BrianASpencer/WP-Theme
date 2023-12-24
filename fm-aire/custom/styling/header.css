@@ -48,8 +48,12 @@
     background-color: #3368B8;
     color: #fff !important;
     border-radius: 5px;
-    padding: 10px 20px;
     border: none;
+    cursor: pointer;
+}
+
+.login-header-button label {
+    padding: 0 30px;
     cursor: pointer;
 }
 

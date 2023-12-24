@@ -12,10 +12,6 @@ if (!defined('ABSPATH')) {
 
 </style>
 
-<?php 
-    get_header();
-?>
-
 <form class="login-form" name="wpflogin" action="" method="POST">
     <div class="form-header">Welcome</div>
     <div class="form-description">Please enter your email address and password.</div>
@@ -42,7 +38,3 @@ if (!defined('ABSPATH')) {
         <?php do_action('wpforo_login_form_end') ?>
     </div>
 </form>
-
-<?php 
-    get_footer();
-?>

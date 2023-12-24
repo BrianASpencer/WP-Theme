@@ -11,10 +11,6 @@ if (!defined('ABSPATH')) {
     ?>
 </style>
 
-<?php 
-    get_header();
-?>
-
 <div class="two-column-info-placard">
     <div class="image-column">
         <img src="<?php echo get_template_directory_uri() . '/assets/FM-AIRE Wordmark - Gray.png'; ?>" alt="FM-AIRE Wordmark Logo">
@@ -82,7 +78,7 @@ if (!defined('ABSPATH')) {
         info_card('What are the priorities for Innovation?', $left_content.$sub_header.$left_content_bottom_short, $sub_header.$right_content.'<br><br>'.$find_out_button);
     ?>
 </div>
-<div class="card-spacer">
+<div class="card-spacer" style="margin-bottom: 5em;">
     <?php
         $list_subheader_doc = '<h3 class="info-card-subheader">Document Link list</h3>';
         $list_subheader_res = '<h3 class="info-card-subheader">Resources</h3>';
@@ -97,8 +93,3 @@ if (!defined('ABSPATH')) {
     ?>
 </div>
 
-<br><br>
-
-<?php 
-    get_footer();
-?>
