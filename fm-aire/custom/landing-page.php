@@ -11,6 +11,10 @@ if (!defined('ABSPATH')) {
     ?>
 </style>
 
+<?php 
+    get_header();
+?>
+
 <div class="two-column-info-placard">
     <div class="image-column">
         <img src="<?php echo get_template_directory_uri() . '/assets/FM-AIRE Wordmark - Gray.png'; ?>" alt="FM-AIRE Wordmark Logo">
@@ -95,3 +99,6 @@ if (!defined('ABSPATH')) {
 
 <br><br>
 
+<?php 
+    get_footer();
+?>

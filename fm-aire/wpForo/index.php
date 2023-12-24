@@ -7,40 +7,16 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 */
 
 if ( is_front_page() ) {
-    if ( WPF()->board->get_current( 'is_standalone' ) ) get_header();
     include_once get_template_directory() . '/custom/landing-page.php';
-?>
-<br><br>
-<?php
-    include_once get_template_directory() . '/custom/contact-us.php';
-?>
-<?php
-    include_once get_template_directory() . '/custom/login.php';
-?>
-<?php
-    
-    if ( WPF()->board->get_current( 'is_standalone' ) ) get_footer();
     exit();
 } else if (is_custom_login_page()) {
     include_once get_template_directory() . '/custom/login.php';
     exit();
 }
 
-if ( WPF()->board->get_current( 'is_standalone' ) ) get_header();
-?>
-<div id="wpforo" class="wpForo-body">
-    <div id="wpforo-wrap" class="<?php do_action( 'wpforo_wrap_class' ); ?>">
+do_action( 'wpforo_content_start' );
 
-        <?php if ( wpforo_display_header() ) include( wpftpl( 'header.php' ) );
-?>
-
-        <div class="wpforo-main">
-            <div class="wpforo-content <?php if( wpforo_setting( 'social', 'sb_location_toggle' ) === 'right' ) echo 'wpfrt' ?>" <?php echo is_active_sidebar( wpforo_prefix( 'sidebar' ) ) ? '' : 'style="width:100%"' ?>>
-                <?php do_action( 'wpforo_content_start' );
-?>
-                <?php
-if ( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) :
-
+if ( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) {
     if ( ! WPF()->current_object['is_404'] ) {
         if ( WPF()->current_object['template'] === 'page' ) {
             wpforo_page();
@@ -58,29 +34,7 @@ if ( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) :
         }
     } else {
         wpforo_template( '404' );
-    } else : ?>
-                <p class="wpf-p-error">
-                    <?php wpforo_phrase( 'You have been banned. Please contact the forum administrator for more information.' ) ?>
-                </p>
-                <?php endif;
-?>
-            </div>
-            <?php if ( is_active_sidebar( wpforo_prefix( 'sidebar' ) ) ) : ?>
-            <div class="wpforo-right-sidebar">
-                <?php dynamic_sidebar( wpforo_prefix( 'sidebar' ) ) ?>
-            </div>
-            <?php endif;
-?>
-            <div class="wpf-clear"></div>
-        </div>
-
-        <?php
-if ( wpforo_display_footer() ) include( wpftpl( 'footer.php' ) );
+    }
+}
 do_action( 'wpforo_bottom_hook' );
-?>
-
-    </div><!-- wpforo-wrap -->
-</div>
-
-<?php if ( WPF()->board->get_current( 'is_standalone' ) ) get_footer();
 ?>

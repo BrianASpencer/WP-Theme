@@ -3,7 +3,12 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-    include_once get_template_directory() . '/custom/login.php';
+
+include_once get_template_directory() . '/custom/login.php';
+
+/* possible solution to custom paging: https://wpforo.com/community/how-to-and-troubleshooting-2/how-to-add-a-redirect-to-a-custom-404-page/ */
+//$this->current_object = apply_filters( 'wpforo_after_init_current_object', $this->current_object, $wpf_url_parse );
+
 
 /*
 Old HTML (add after ?>):

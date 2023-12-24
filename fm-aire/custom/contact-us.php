@@ -11,6 +11,10 @@ if (!defined('ABSPATH')) {
     ?>
 </style>
 
+<?php 
+    get_header();
+?>
+
 <div id="contact-form-container">
     <h2 id="form-header">Contact Us</h2>
     <form id="contact-form">
@@ -60,6 +64,9 @@ if (!defined('ABSPATH')) {
         // Hide the form and its header
         document.getElementById('form-header').style.display = 'none';
         document.getElementById('contact-form').style.display = 'none';
+        //pad now that the form shrunk
+        document.getElementById('contact-form-container').style.marginTop = '15em';
+        document.getElementById('contact-form-container').style.marginBottom = '15em';
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState == 4 && xhr.status == 200) {
@@ -73,3 +80,7 @@ if (!defined('ABSPATH')) {
         //xhr.send(formData);
     }
 </script>
+
+<?php 
+    get_footer();
+?>

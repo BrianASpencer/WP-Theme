@@ -5,7 +5,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     width: 25%;
-    margin: 0 auto;
+    margin: 5em auto;
 }
 
 #contact-form-container h2 {
@@ -39,7 +39,7 @@ label {
 }
 
 #message {
-    width: 85%;
+    width: 90%;
 }
 
 #submit-btn {
@@ -54,6 +54,7 @@ label {
     color: #4caf50;
     display: none;
     text-align: center;
+    margin-top: 15px;
 }
 
 /* Responsive Styling */

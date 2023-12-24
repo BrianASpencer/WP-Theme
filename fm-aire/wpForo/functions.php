@@ -9,6 +9,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
  * @theme: Classic
  */
 
+
 include_once( wpftpl( 'layouts/4/forum-thread.php' ) );
 include_once( wpftpl( 'layouts/4/topic-thread.php' ) );
 include_once( wpftpl( 'layouts/4/post-thread.php' ) );

@@ -7,10 +7,11 @@
 /* Top Header */
 .top-header {   
     background-color: #ffffff;
-    padding: 10px 0;
+    padding: 10px 3em 10px 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .top-header a {
@@ -25,7 +26,22 @@
 }
 
 .top-header-nav {
-    max-width: 80%;
+    max-width: 85%;
+}
+
+#about-us-link {
+    padding-right: 20px;
+}
+
+#contact-us-link {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#search-link {
+    padding-left: 20px;
+    border: none; 
+    border-right: none;
 }
 
 .login-header-button {
@@ -56,29 +72,29 @@
     color: white;
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .secondary-navigation i {
     font-size: 2em;
-    margin-right: 20px;
+    margin-right: 0.5em;
 }
 
 .secondary-navigation a {
     text-decoration: none;
     color: white;
+    margin: 0 auto;
 }
 
 .secondary-navigation a:hover {
-    color: #585858 !important;
+    color: #3368b8 !important;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin-left: 9%;
+    padding: 20px 2em 20px 5em;
 }
 
 .logo {

@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-wp_footer();
+//wp_footer();
 ?>
 
 <style>
