@@ -8,6 +8,9 @@ There are some changes made to files (like index.php) within the wpForo folder w
 
 # Setup
 
+Under wpForo -> Settings -> Login & Registration -> Custom Redirect URLs,
+can configure redirecting to forum, or other page here.
+
 # Troubleshooting
 Forum post about adding a new page template:
 https://wpforo.com/community/how-to-and-troubleshooting-2/how-to-add-a-page-template/
