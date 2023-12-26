@@ -14,6 +14,30 @@ can configure redirecting to forum, or other page here.
 For custom pages / whitelisting. Go to Board settings and add page URL to allowed URL list.
 Add to theme page-<page_slug>.php with the contents of the page.
 
+# Shortcodes and Custom Pages
+
+To have custom pages outside of wpForo, the setup is to create the content and shortcodes for it.
+
+Then, add a new page and add the shortcode(s) to the page. You must add a page-<page_title>.php file with:
+<?php
+// Exit if accessed directly
+if( ! defined( 'ABSPATH' ) ) exit;
+
+wp_head();
+
+get_header();
+
+if ( have_posts() ) :
+    while ( have_posts() ) :
+        the_post();
+        the_content();
+    endwhile;
+endif;
+
+get_footer();
+?>
+
+
 # Troubleshooting
 Forum post about adding a new page template:
 https://wpforo.com/community/how-to-and-troubleshooting-2/how-to-add-a-page-template/
