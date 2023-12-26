@@ -5,12 +5,6 @@ if (!defined('ABSPATH')) {
 }
 ?>
 
-<style>
-    <?php 
-        include 'styling/info-card.css'; 
-    ?>
-</style>
-
 <?php
 
 function info_card($title, $leftContent, $rightContent) {

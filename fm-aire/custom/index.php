@@ -7,6 +7,15 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 */
 get_header();
 
+/*
+$logValue = WPF()->current_object['template'];
+
+$logFile = get_template_directory() . '/logs/log_0.log';
+
+error_log($logValue . PHP_EOL, 3, $logFile);
+*/
+
+
 if ( is_front_page() ) {
     include_once get_template_directory() . '/custom/landing-page.php';
     get_footer();
@@ -37,5 +46,8 @@ if ( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) {
 }
 
 do_action( 'wpforo_bottom_hook' );
+on( 'wpforo_bottom_hook' );
+
 get_footer();
+
 ?>

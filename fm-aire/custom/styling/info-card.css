@@ -30,6 +30,10 @@
     margin-bottom: 0;
 }
 
+.top {
+    margin-top: 0;
+}
+
 .info-card-header img {
     max-width: 60px;
     height: auto;
@@ -56,7 +60,6 @@
 
 .info-card-right {
     padding-left: 20px;
-    margin-top: -1.4em;
 }
 
 .find-out-button {
@@ -79,7 +82,6 @@
 .info-card-column.info-card-right-25 {
     padding-left: 20px;
     flex: 0 0 25%;
-    margin-top: -1.4em;
 }
 
 .info-card-column.info-card-right-25 ul {

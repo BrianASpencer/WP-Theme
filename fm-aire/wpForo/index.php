@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 include_once get_template_directory() . '/custom/index.php';
 exit();
 
+
 if ( WPF()->board->get_current( 'is_standalone' ) ) get_header();
 ?>
 <div id="wpforo" class="wpForo-body">
@@ -65,7 +66,6 @@ if ( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) :
 if ( wpforo_display_footer() ) include( wpftpl( 'footer.php' ) );
 do_action( 'wpforo_bottom_hook' );
 ?>
-
     </div><!-- wpforo-wrap -->
 </div>
 

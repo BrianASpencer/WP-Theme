@@ -7,11 +7,12 @@ if( ! defined( 'ABSPATH' ) ) exit;
 The hack going on here is:
  1. go to wpForo settings -> Board Settings -> /tags and change it to contact-us (or whatever page)
  2. Add logic here to show that page.
+ 
+ NOTE: No longer needed. Adding a page in WP and creating page-<page_title>.php file to hold its contents will work.
 */
-include_once get_template_directory() . '/custom/contact-us.php';
-exit();
+//include_once get_template_directory() . '/custom/contact-us.php';
+//exit();
 ?>
-<!--
 <div class="wpforo-tags-wrap">
     <div class="wpf-head-bar">
         <h1 id="wpforo-title" style="padding-bottom:0px; margin-bottom:0px;">
@@ -66,4 +67,3 @@ exit();
 		<?php wpforo_template_pagenavi() ?>
     </div>
 </div>
--->

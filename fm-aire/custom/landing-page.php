@@ -49,7 +49,7 @@ if (!defined('ABSPATH')) {
 <?php
     include('card.php');
 
-    $left_content = '<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>';
+    $left_content = '<span style="margin-bottom: 50px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>';
 
     $right_content = $left_content;
 
@@ -59,28 +59,30 @@ if (!defined('ABSPATH')) {
 
     $sub_header = '<h3 class="info-card-subheader">Smaller subhead here</h3>';
 
+    $sub_header_top = '<h3 class="info-card-subheader top">Smaller subhead here</h3>';
+
     $find_out_button = '<button type="button" class="find-out-button">FIND OUT MORE</button>';
 ?>
 
 
 <div class="card-spacer">
     <?php
-        info_card('What is FM-AIRE?', '<strong>'.$left_content.$sub_header.$left_content_bottom_short.'</strong>', $sub_header.'<strong>'.$right_content.'</strong><br><br>'.$find_out_button);
+        info_card('What is FM-AIRE?', '<strong>'.$left_content.$sub_header.$left_content_bottom_short.'</strong>', $sub_header_top.'<strong>'.$right_content.'</strong><br><br>'.$find_out_button);
     ?>
 </div>
 <div class="card-spacer">
     <?php
-        info_card('Who is eligible to apply', $left_content.$sub_header.$left_content_bottom_short, $sub_header.$right_content.'<br><br>'.$find_out_button);
+        info_card('Who is eligible to apply', $left_content.$sub_header.$left_content_bottom_short, $sub_header_top.$right_content.'<br><br>'.$find_out_button);
     ?>
 </div>
 <div class="card-spacer">
     <?php
-        info_card('What are the priorities for Innovation?', $left_content.$sub_header.$left_content_bottom_short, $sub_header.$right_content.'<br><br>'.$find_out_button);
+        info_card('What are the priorities for Innovation?', $left_content.$sub_header.$left_content_bottom_short, $sub_header_top.$right_content.'<br><br>'.$find_out_button);
     ?>
 </div>
 <div class="card-spacer" style="margin-bottom: 5em;">
     <?php
-        $list_subheader_doc = '<h3 class="info-card-subheader">Document Link list</h3>';
+        $list_subheader_doc = '<h3 class="info-card-subheader top">Document Link list</h3>';
         $list_subheader_res = '<h3 class="info-card-subheader">Resources</h3>';
         $list = '
         <ul>
@@ -92,4 +94,6 @@ if (!defined('ABSPATH')) {
         info_card_75_25('How do we apply?', $left_content.$sub_header.$left_content_bottom_long.'<br><br>'.$find_out_button, $list_subheader_doc.$list.$list_subheader_res.$list);
     ?>
 </div>
+
+
 
