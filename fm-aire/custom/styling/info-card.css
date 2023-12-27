@@ -4,7 +4,7 @@
     border-radius: 2px;
     overflow: hidden;
     padding: 12px;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     background-color: white;
 }
@@ -72,7 +72,7 @@
 
 /* 75/25 info card styling */
 .info-card.info-card-75-25 {
-    width: 30%;
+    width: 50%;
 }
 
 .info-card-column.info-card-left-75 {
@@ -94,14 +94,6 @@
 }
 
 /* Responsive Styling for info card */
-@media (min-width: 1367px) and (max-width: 1920px) {
-    .info-card {
-        width: 45%;
-    }
-    .info-card.info-card-75-25 {
-        width: 45%;
-    }
-}
 @media (min-width: 1000px) and (max-width: 1367px) {
     .info-card {
         width: 70%;
