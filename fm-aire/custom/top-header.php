@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
         <a id="contact-us-link" href="<?php echo esc_url(home_url('/contact-us')); ?>">Contact Us</a>
         <a id="search-link" href="#">Search <i class="fa-solid fa-magnifying-glass"></i></a>
     </div>
-    <a href="<?php echo esc_url(home_url('/sign-in')); ?>" class="login-header-button">
+    <a href="<?php echo esc_url(home_url('/login')); ?>" class="login-header-button">
         <label>Learning Community Login</label>
     </a>
 </div>

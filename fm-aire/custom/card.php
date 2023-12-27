@@ -6,14 +6,15 @@ if (!defined('ABSPATH')) {
 ?>
 
 <style>
-    <?php 
-        include 'styling/info-card.css'; 
+    <?php include 'styling/info-card.css';
     ?>
+
 </style>
 
 <?php
 
 function info_card($title, $leftContent, $rightContent) {
+    try{
 ?>
 <div class="info-card">
     <div class="info-card-border">
@@ -33,11 +34,17 @@ function info_card($title, $leftContent, $rightContent) {
 </div>
 
 <?php
+} catch (Exception $e) {
+    // Log or display the error message
+    error_log('Error in card.php info_card function: ' . $e->getMessage());
+}
+
 }
 ?>
 
 <?php
 function info_card_75_25($title, $leftContent, $rightContent) {
+    try{
 ?>
 <div class="info-card info-card-75-25">
     <div class="info-card-border">
@@ -56,6 +63,9 @@ function info_card_75_25($title, $leftContent, $rightContent) {
     </div>
 </div>
 <?php
+                                                               } catch (Exception $e) {
+    // Log or display the error message
+    error_log('Error in card.php info_card_75_25 function: ' . $e->getMessage());
+}
 }
 ?>
-

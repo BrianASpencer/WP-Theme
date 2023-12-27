@@ -14,9 +14,9 @@ if (!defined('ABSPATH')) {
     <div class="secondary-navigation">
         <div style="width: 100%">
             <ul>
-                <li><a href=""><i class="fa-solid fa-user-doctor"></i>Overview & Learnings</a></li>
-                <li><a href=""><i class="fas fa-pen-to-square"></i>Application Information</a></li>
-                <li><a href=""><i class="fas fa-hospital"></i>Participating Residencies</a></li>
+                <li><a href="<?php echo esc_url(home_url('/overview-learnings')); ?>"><i class="fa-solid fa-user-doctor"></i>Overview & Learnings</a></li>
+                <li><a href="<?php echo esc_url(home_url('/application-information')); ?>"><i class="fas fa-pen-to-square"></i>Application Information</a></li>
+                <li><a href="<?php echo esc_url(home_url('/participating-residencies')); ?>"><i class="fas fa-hospital"></i>Participating Residencies</a></li>
             </ul>
         </div>
     </div>
