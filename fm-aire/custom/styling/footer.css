@@ -41,3 +41,16 @@
     color: white;
     font-size: small;
 }
+
+/* Mobile Styling */
+@media only screen and (max-width: 767px) {
+    .footer-content {
+        max-width: 90%;
+        margin: 2em auto;
+        margin-bottom: 1em;
+    }
+    
+    .mobile-spacer {
+        margin-bottom: 10px;
+    }
+}

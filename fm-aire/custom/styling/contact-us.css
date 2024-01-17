@@ -23,6 +23,11 @@
     margin: 15px auto;
 }
 
+.form-row input {
+    border: 1px solid #EAEDF5;
+    border-radius: 5px;
+}
+
 .form-row label {
     display: block;
     margin-bottom: 5px;

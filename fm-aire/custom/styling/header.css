@@ -5,7 +5,7 @@
 }
 
 /* Top Header */
-.top-header {   
+.top-header {
     background-color: #ffffff;
     padding: 10px 3em 10px 5em;
     display: flex;
@@ -25,7 +25,7 @@
     text-decoration: none;
 }
 
-.top-header-nav {
+.top-nav {
     max-width: 85%;
 }
 
@@ -40,7 +40,7 @@
 
 #search-link {
     padding-left: 20px;
-    border: none; 
+    border: none;
     border-right: none;
 }
 
@@ -57,14 +57,15 @@
     cursor: pointer;
 }
 
-/* Red Header */
-.secondary-navigation {
+/* Bottom Header */
+.bottom-nav {
+    display: flex;
     flex: 2;
     max-width: 80%;
     text-align: right;
 }
 
-.secondary-navigation ul {
+.bottom-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -72,29 +73,29 @@
     justify-content: flex-end;
 }
 
-.secondary-navigation li {
+.bottom-nav li {
     color: white;
     display: flex;
     align-items: center;
     margin-right: 1em;
 }
 
-.secondary-navigation i {
+.bottom-nav i {
     font-size: 2em;
     margin-right: 0.5em;
 }
 
-.secondary-navigation a {
+.bottom-nav a {
     text-decoration: none;
     color: white;
     margin: 0 auto;
 }
 
-.secondary-navigation a:hover {
+.bottom-nav a:hover {
     color: #3368b8 !important;
 }
 
-.header-content {
+.bottom-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,4 +112,139 @@
     max-width: 200px;
     height: auto;
     display: block;
+}
+
+/* Mobile Styling */
+@media only screen and (max-width: 767px) {
+    .bottom-header {
+        display: none;
+    }
+
+    .top-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        position: relative;
+    }
+
+    .mobile-logo {
+        flex: 1;
+        max-width: 60%;
+    }
+
+    .mobile-logo img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin-left: 10px;
+    }
+
+    #mobile-menu-icon {
+        margin-left: auto;
+        margin-right: 15px;
+        display: block;
+        color: #ffffff;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 100%;
+        /* Position the menu below the header */
+        right: 0;
+        /* Align the menu to the right */
+        background-color: #DA222B;
+        /* Set background color for the menu */
+        z-index: 1;
+        /* Ensure the menu is on top of other elements */
+        text-align: right;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobile-nav ul {
+        align-items: end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav li {
+        color: white;
+        display: flex;
+        align-items: right;
+        margin-right: 10px;
+    }
+
+    .mobile-nav i {
+        font-size: 2em;
+        margin-right: 0.5em;
+    }
+
+    .mobile-nav a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .mobile-icon-nav a:hover {
+        color: #3368b8 !important;
+    }
+
+    .mobile-icon-nav label {
+        color: white;
+        display: block;
+        /* Display label as a block element to make it vertical */
+        margin-bottom: 10px;
+        /* Add margin between label and links */
+    }
+
+    .mobile-links {
+        flex-direction: column;
+    }
+
+    .mobile-links a {
+        margin-right: 10px;
+    }
+
+    .mobile-icon-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        /* Set the flex direction to column */
+    }
+
+    .mobile-icon-nav li {
+        color: white;
+        margin-bottom: 10px;
+        /* Add margin between menu items */
+    }
+
+    .mobile-header-login-button {
+        background-color: #3368B8;
+        color: #fff !important;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        margin: 20px auto !important;
+        padding: 10px;
+    }
+
+    .mobile-header-login-button label {
+        display: block;
+        padding: 0 10px;
+        cursor: pointer;
+    }
 }
