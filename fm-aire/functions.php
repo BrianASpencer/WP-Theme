@@ -44,14 +44,27 @@ add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
 add_action('after_setup_theme', 'setup');
 
 // SPECIAL WPFORO Style loading:
+/*
 function enqueue_wpforo_styles() {
-    wp_enqueue_style('wpforo-matrix', get_template_directory_uri() . '/wpForo/styels/matrix.css');
+    wp_enqueue_style('wpforo-matrix', get_template_directory_uri() . '/wpForo/styles/matrix.css');
     wp_enqueue_style('wpforo-styles', get_template_directory_uri() . '/wpForo/style.css');
     wp_enqueue_style('wpforo-styles-rtl', get_template_directory_uri() . '/wpForo/style-rtl.css');
     wp_enqueue_style('wpforo-widgets', get_template_directory_uri() . '/wpForo/widgets.css');
     wp_enqueue_style('wpforo-widgets-rtl', get_template_directory_uri() . '/wpForo/widgets-rtl.css');
 }
-add_action('wp_enqueue_scripts', 'enqueue_wpforo_styles');
+add_action('wp_enqueue_scripts', 'enqueue_wpforo_styles', 10);
+*/
+
+function enqueue_wpforo_styles() {
+    //$wpforo_styles_url = plugins_url('/themes/2022/style.css', __FILE__);
+    //wp_enqueue_style('wpforo-styles', $wpforo_styles_url, array(), '2.3.0');
+    wp_deregister_style('wpforo-style');
+    $wpforo_styles_url = plugins_url('/themes/2022/style.css');
+    wp_enqueue_style('wpforo-style', $wpforo_styles_url);
+}
+
+//add_action('wp_enqueue_scripts', 'enqueue_wpforo_styles');
+
 
 
 

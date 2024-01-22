@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- import style.css -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
     

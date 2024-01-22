@@ -18,227 +18,28 @@ body {
     margin: 0 !important;
 }
 
-/******************************************************/
-/************ wpForo Layout 4 (Threaded) **************/
-/******************************************************/
-#wpforo #wpforo-wrap .wpf-circle{display: flex; flex-direction: column; align-items: center; justify-content: space-around; }
-#wpforo #wpforo-wrap .wpf-circle.wpf-m{width: 48px; height: 48px;}
-#wpforo #wpforo-wrap .wpf-circle.wpf-m i{font-size: 19px; opacity: 0.7;}
-#wpforo #wpforo-wrap .wpf-circle.wpf-s{width: 20px; height: 20px; min-width: 20px; min-height: 20px;}
-#wpforo #wpforo-wrap .wpf-circle.wpf-s i{font-size: 13px;}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-#wpforo #wpforo-wrap .wpfl-4 .wpforo-category{flex-wrap: wrap; display: flex; justify-content: space-between; align-items: flex-end; float: none; border-radius: 0 0 20px 0; margin-bottom: 20px;}
-#wpforo #wpforo-wrap .wpfl-4.wpf-subforums .wpforo-category{padding: 12px 0 5px 0; border-radius: 0;}
-#wpforo #wpforo-wrap .wpfl-4.wpf-subforums .wpforo-category i{font-size: 14px; margin-right: 7px;}
-#wpforo #wpforo-wrap .wpfl-4 .cat-title{text-align:left; padding:5px 10px 5px 0; font-size:36px; font-weight: 600;}
-#wpforo #wpforo-wrap .wpfl-4 .cat-icon{ margin-right: 10px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-head-bar {padding: 14px 12px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-head-bar-left,
-#wpforo #wpforo-wrap .wpfl-4 .wpf-head-bar-right{width: auto; min-height: auto; float: none;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-head-bar-left{flex-grow: 1;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-topic-form-extra-wrap .wpf-topic-create {border: none;margin-bottom: 20px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-load-threads a{ opacity:0.5; font-size: 17px; border-bottom: 1px dashed transparent; display: inline-block; padding:4px 2px; line-height: 20px; margin: 0 3px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-load-threads a:hover,#wpforo #wpforo-wrap .wpfl-4 .wpf-load-threads a.wpf-active{opacity: 1;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-forums{cursor:pointer; padding: 3px 5px 3px 2px; font-size: 15px; line-height: 30px; display: inline-block; margin-right: 10px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-forums i{ display: inline-block; padding: 0; margin-right: 5px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forums{width: 100%; margin: 0 0 10px 0;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list{display: flex; justify-content: space-between; align-content: flex-start; flex-direction: row; flex-wrap: wrap;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list .wpf-forum-item .wpf-circle{margin-right: 5px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list .wpf-forum-item{width: 49.8%; min-width: 200px; padding: 7px 5px 6px 15px; margin-top: 3px; display: flex; justify-content: flex-start; align-items:flex-start; flex-grow: 1;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list .wpf-forum-item a{line-height: 1.5; outline: hidden;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list .wpf-forum-item .wpf-forum-item-stat{ white-space: nowrap; color:#777777; margin-left: 5px; font-size: 11px; padding: 0px 6px; border: 1px solid #cccccc; line-height: 16px; border-radius: 3px; cursor: default;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-cat-forum-list .wpf-forum-item .wpf-forum-item-stat sep{color: #999999; padding: 0px 3px;}
-#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-list .wpf-no-thread{width: 100%; display: block; text-align: center; font-size: 13px; padding: 5px; color: #555555;}
-#wpforo #wpforo-wrap .wpfl-4 img.avatar{border-radius: 50%; display: block;width: 42px;}
-    /* Topics */
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads{ margin-top: 15px; margin-bottom: 15px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads .wpf-thread{ padding: 7px 0; box-shadow: inset 0px -10px 7px -6px rgba(0, 0, 0, 0.02);}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items:stretch;width: 100%; min-height: 35px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads-label{padding: 3px 5px 3px 2px; font-size: 15px; line-height: 20px; display: inline-block;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-head-box{ float: left; font-size: 12px; padding: 5px 1px; text-align: center; }
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-status{min-width: 63px; width: 85px; text-align: left; padding-left: 10px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-title{ width: 45%; text-align: left; flex-grow: 2; }
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-forum{ width:70px; text-align: left; padding-left: 5px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-author{width: 7%; text-align: center; }
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-posts{min-width: 65px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-views{min-width: 65px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads-head .wpf-thead-last-reply{ width:160px; text-align: left; padding-left: 20px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-last-avatar img,
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-last-avatar img.avatar{width: 24px; height: 24px; box-shadow: none;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-body {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items:flex-start;width: 100%; min-height: 35px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box{padding:1px 5px; text-align: center;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-status{min-width: 63px; width: 85px; margin-left: 10px; padding-top: 4px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title{width: 45%; text-align: left; padding-left: 5px; padding-right: 20px; flex-grow: 2; }
+footer {
+    margin-top: auto !important;
+}
 
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title i{margin-right: 7px;text-shadow: 1px 0px 1px #ccc;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-forum{width:70px; text-align: center; padding-right: 0; padding-left: 0; margin-top: 3px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-forum span{padding-left: 1px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-author{width:auto; text-align: left; padding: 4px 15px 0 5px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title .wpf-thread-author-name,
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title .wpf-thread-author-name a{font-size: 13px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-posts{min-width: 65px; line-height: 2.3; font-size: 15px; display: flex; justify-content: center; align-items: center;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-posts span{padding: 12px 1px; display: block; margin: -5px auto 0; border-radius: 5px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-views{min-width: 65px; line-height: 2.3; font-size: 15px;display: flex; justify-content: center; align-items: center;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-views span{padding: 12px; display: block; margin: -5px auto 0; border-radius: 5px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply{width: 160px; padding-left: 20px; text-align: right; line-height: 1.5; font-size: 12px; display: flex; justify-content: flex-start; align-items: center;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-user{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; text-align: left;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-user span{margin-right: 4px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-date{display: flex; justify-content: flex-start; align-items: center; text-align: left;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-date i{margin-right: 5px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-avatar{margin-right: 3px;display: flex; justify-content: flex-start; align-items: center;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-avatar i{margin-right: 9px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-last-reply .wpf-thread-last-info{font-size: 12px; line-height: 18px;}
+#wpadminbar {
+    display: none;
+}
 
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title .wpf-thread-head{line-height: 19px;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-thread-box.wpf-thread-title a {line-height: 18px; display: inline; font-size: 14px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread .wpf-thread-status-mobile{display: none; font-size: 12px; margin-right: 2px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread .wpf-thread-status-mobile i{margin-right: 5px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread .wpf-thread-forum-mobile{display: none; font-size: 12px; cursor: default;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread .wpf-thread-date-mobile{display: none; font-size: 11px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-status{display: flex; justify-content: flex-start; flex-direction: row; align-items: flex-start; padding-top: 0;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-status .wpf-thread-statuses{ display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items:flex-end;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-status .wpf-circle{margin-left: -6px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-status .wpf-circle:first-child{ width: 48px; height: 48px; min-width: 28px; min-height: 28px; margin-left: -6px; margin-right: -10px; }
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-status .wpf-circle:first-child i{font-size: 20px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-forum{display: flex; justify-content: center; flex-direction: row; align-items: center; padding-top: 1px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users{display: flex; justify-content: flex-start; flex-direction: row; align-items: flex-start; padding-top: 1px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users-avatars{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: flex-start; align-items:flex-end;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users a img{ display: inline-block; border-radius: 50%; padding: 1px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users .wpf-circle.wpf-s{width: 22px;height: 22px; min-width: 22px; min-height: 22px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users .wpf-circle{margin-left: -8px; }
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users .wpf-circle a{display: inline-block;line-height: 1vw; padding: 0; margin: 0; max-width: 100%;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users .wpf-circle img{width: 100%;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-thread-users .wpf-circle:first-child{ width: 2.2vw; height: 2.2vw; min-width: 28px; min-height: 28px; margin-left: 0; }
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads-filter i{ width: 17px; }
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads .wpforo-tags{padding: 0; font-size: 11px; margin: 0; display: inline-block;}
-	#wpforo #wpforo-wrap .wpfl-4 .wpf-threads .wpforo-tags .wpf-tags-text i{padding-right: 0; margin-right: 4px; font-size: 14px;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads .wpforo-tags .wpf-tags-text span.wpf-ttt{ display: none;}
-    #wpforo #wpforo-wrap .wpfl-4 .wpf-threads .wpforo-tags tag a{padding: 2px 0; font-size: 11px;}
-    #wpforo #wpforo-wrap .wpft-topic .wpfl-4 .wpf-threads-head{ padding: 7px 7px; display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: flex-start;align-items:stretch;width: 100%; min-height: 35px;}
-    #wpforo #wpforo-wrap .wpft-topic .wpfl-4 .wpf-threads{ margin-top: 10px;}
-    #wpforo #wpforo-wrap .wpft-topic .wpfl-4 .wpf-threads-head .wpf-thead-date{padding-right: 5px;}
-    #wpforo #wpforo-wrap .wpft-topic .wpfl-4 .wpf-thread-box.wpf-thread-date{padding-right: 15px;}
-        /* Posts */
-        #wpforo #wpforo-wrap .wpfl-4 .post-wrap{margin-bottom:10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .post-wrap:first-child{margin-bottom:-10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-right .wpf-member-title.wpfut{display: inline-block;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post{display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: stretch; align-content: flex-start;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-topic-meta{margin-left: 110px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-topic-meta .wpf-parent-post{display: block;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-topic-meta .wpforo-tags{padding: 20px 20px 0 20px; margin-bottom: 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-topic-meta .wpforo-tags .wpf-tags-title{ padding-top: 1px; padding-right: 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-post-btns .wpf-action{ margin:0 6px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-left{padding: 15px 1px 10px; text-align: center;  width: 100px; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-left .avatar{width:80px; max-height:80px; padding:3px; float:none; display:inline-block;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-left .wpf-author-avatar{display:block; width:100%; float:none;max-height: 80px; max-width: 80px; margin:0 auto 7px auto}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-left .wpf-author-posts{font-size: 12px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right{flex-grow: 1; padding-top: 15px; padding-left: 10px; width: calc(100% - 100px);}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top{ display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:flex-end; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top .wpf-author{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:flex-end; flex-grow: 1; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top .wpf-author-name{font-size:16px; font-weight:600; margin-right: 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top .wpf-author-name i{font-size: 14px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top .wpf-member-title{ margin-right: 5px; border-radius: 15px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-top .wpf-post-date{ text-align: right; font-size: 12px; padding-bottom: 2px; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:baseline;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:flex-end; flex-grow: 1;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-nicename{ font-size: 13px; margin-right: 5px; line-height: 21px; padding-top: 0px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-title{font-size:11px; margin-right: 7px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-joined{font-size:11px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-joined i{margin-right: 2px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-post-btns i{font-size: 12px; opacity: 0.8;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content{ width: 100%; padding: 5px 1px; margin-top: 7px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .author-rating-full{font-size: 14px;min-width: 26px;padding: 2px 0px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content .wpforo-post-content{min-height: auto; padding: 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content .wpf-post-edit-wrap{margin: 20px 0 0 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content .wpf-mod{display: block; margin-top: -15px; padding-bottom: 1px; font-size: 12px; line-height: 16px; text-align: right;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content .wpf-mod .wpf-mod-message{float: none;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot{width: 100%; padding:8px 20px 9px 15px; border-radius: 10px 0 0 0; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reaction-wrap{opacity: 0.8; margin-right: 7px; padding-right: 10px; border-right: 1px solid #ededed;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reaction-wrap:hover{opacity: 1;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reaction-wrap .wpf-like-count{ margin-right: 5px; border-right: 1px solid #ccc; padding-right: 14px; white-space: normal; cursor:pointer; font-size: 15px; display: inline-block; line-height: 20px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpfp-first .wpf-content-foot .wpf-reaction-wrap .wpf-like-count{ border-right: none}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reply{ }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reply .wpf-action{margin: 0;line-height: 20px; padding: 2px 5px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-reply i{ font-size: 12px; line-height: 20px; padding-right: 3px; margin-right: 6px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons{flex-grow: 1; text-align: right; margin-right: -10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons .wpf-action{margin: 0 3px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons .wpf-action i.fa-thumbtack {font-size: 14px; vertical-align: middle;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons .wpf-action i.fa-eye,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons .wpf-action i.fa-eye-slash,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-content-foot .wpf-buttons .wpf-action i.fa-quote-left{font-size: 18px; vertical-align: text-bottom;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar{  cursor: pointer; margin-bottom: 15px; margin-left: 110px; margin-top: 20px; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpf-post-replies-info i{margin-right: 3px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpf-post-replies-info span{font-weight: 600;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpf-post-replies-info .wpf-post-replies-count{margin-right: 1px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpf-post-replies-info{font-size: 12px; text-transform: uppercase; padding-right: 15px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpf-prsep{flex-grow: 1; height: 1px;margin-right: 15px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpforo-ttgg{ font-size: 18px; line-height: 16px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies-bar .wpforo-ttgg i{vertical-align: middle; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-1{margin-left: 110px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-2,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-3,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-4,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-5,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-6,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies.level-7{margin-left: 40px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post{ margin-bottom: 20px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head{display: flex; flex-wrap: wrap; flex-direction: row; justify-content:space-between; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author-avatar{width: 70px; height: 52px; padding:0 10px; align-self:flex-start;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author-avatar img,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author-avatar .avatar{ padding: 3px; width: 50px; height: 50px; max-width: 100%; max-height: 100%;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author{flex-grow: 3; padding-bottom: 7px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-head{display:flex; flex-wrap: wrap; flex-direction: row; justify-content:flex-start; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-membertoggle{display: inline-block;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-memberinfo{text-align: left; font-size: 12px; padding: 0 0 10px 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-memberinfo .wpf-member-profile-button{font-size: 13px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-memberinfo .wpf-member-socnet-wrap{padding: 5px 0 7px 0; text-align: left;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-memberinfo .wpf-author-title{margin: 0 7px 0 2px; font-size: 11px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-name{display: inline-block;font-size: 13px; font-weight: 600; margin-right: 7px; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-name i{font-size:12px}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-title{display: inline-block; margin: 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-title .wpf-member-title.wpfut { font-size: 10px; line-height: 13px; padding: 2px 15px; margin: 5px 7px 5px auto; border: none; border-radius: 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-title .wpf-member-title.wpfut.wpfsut{background-color: #f1f1f1; padding: 3px 10px 2px 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-nicename{display: inline-block; margin-right: 4px; font-size: 13px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-posts{display: inline-block; margin-right: 6px; font-size: 11px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-joined{display: inline-block; font-size: 12px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpf-author-joined i{margin-right: 2px; font-size: 11px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .author-rating-full { display: inline-block; font-size: 13px; line-height: 16px; min-width: auto; padding: 2px 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-post-date{flex-grow: 1; align-self: flex-end; padding-bottom: 18px; text-align: right; padding-right: 15px; font-size: 11px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-post-btns{align-self: flex-end; font-size: 11px; padding-bottom: 15px; line-height: 26px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-post-btns .wpf-sb-top{font-size: 12px; line-height: 26px; padding: 0 0 0 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-post-btns .wpf-sb.wpf-sb-top .wpf-sb-buttons i{line-height: 29px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-sb.wpf-sb-top .wpf-sb-buttons i{font-size: 14px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content{margin-top: -10px; padding: 1px 0 0 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-mod{margin-top: -10px;  font-size: 11px; padding: 1px 25px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree{margin:12px 25px 15px 25px; padding: 0 0 5px 10px; display:flex; flex-wrap: wrap; flex-direction: row; justify-content:flex-start; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree i.fa-ellipsis-h{margin-left: 5px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-reply-to.wpf-tree-item{margin-left: 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-item a{display:flex; flex-wrap: wrap; flex-direction: row; justify-content:flex-start; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-item em{cursor: text; font-style: normal;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-item img,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-item .avatar{width: 18px; height: 18px; display: inline-block; margin: 0 5px 0 8px; }
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-item.wpf-starter .avatar{ width: 22px; height: 22px; padding: 1px; box-sizing: border-box;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-content .wpf-reply-tree .wpf-tree-sep{font-size: 16px; margin-left: 10px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpforo-post-content{margin: 5px 25px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpforo-post-meta{margin: 5px 25px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-content-foot{margin: 10px 0 0 0; width: 100%; min-height: 35px; padding:8px 15px 9px 15px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:center;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-content-foot .wpf-reaction-wrap .wpf-like-count{margin-right: 5px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-reply-head .wpf-author .wpforo-memberinfo .wpf-member-profile-buttons{padding-top: 3px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpforo-post-meta{margin: 30px 25px 10px 25px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-post .wpforo-post-signature{margin-top: 30px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpforo-post .wpforo-post-footer .reacted-users:not(:empty){padding: 5px 15px; font-size: 12px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-replies-sep{padding: 20px 0 5px 10px;margin: 5px 0 0 12px;font-size: 13px;text-transform: uppercase;font-weight: bold;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-replies-sep i{margin-right: 3px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-replies-sep span{font-weight: bold;}
-        #wpforo #wpforo-wrap .wpf-form-wrapper.wpfel-4 .wpf-post-create .wpf-field-name-title{display:none;}
-        #wpforo #wpforo-wrap .wpf-form-wrapper.wpfel-4{width: calc(100% - 110px);margin: 0 0 0 auto;}
-        #wpforo #wpforo-wrap .reply-wrap .wpf-form-wrapper.wpfel-4{width: 100%;}
-        #wpforo #wpforo-wrap .wpf-form-wrapper.wpfel-4 .wpf-reply-form-title{font-size: 16px;margin: 20px 0 10px 0;font-weight: normal;line-height: 20px;display: block;}
-        #wpforo #wpforo-wrap #wpf-form-wrapper.wpfel-4 .mce-toolbar .mce-btn-group .mce-btn.mce-last { float: none; }
-        #wpforo #wpforo-wrap .wpfl-4 .post-wrap .wpf-post-create .wpf-field-name-title,
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-post-replies .wpf-post-create .wpf-field-name-title{display:block!important;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-post-starter{margin: 5px; padding: 1px 7px 3px 7px; font-size: 12px; border-radius: 0;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-post-starter{margin-right: 7px; padding: 1px 6px; font-size: 11px; border-radius: 2px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-post-starter i{margin-right: 0px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-child-post .wpf-member-title{display: inline-block;}
-        #wpforo #wpforo-wrap .wpf-add-topic-title{text-align: center; margin-bottom: 10px; font-size: 18px; font-weight: normal; padding: 12px; border-left: none; border-right: none; text-transform: uppercase;}
+#wpforo {
+    width: 96%;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 767px) {
+    #wpforo {
+        width: 99%;
+        margin-left: 0.5%;
+    }
+}

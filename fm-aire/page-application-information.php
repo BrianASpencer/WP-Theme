@@ -2,9 +2,8 @@
 // Exit if accessed directly
 if( ! defined( 'ABSPATH' ) ) exit;
 
-wp_head();
-
 get_header();
+wp_head();
 
 if ( have_posts() ) :
     while ( have_posts() ) :
