@@ -306,6 +306,7 @@ Author: gVectors Team
 #wpforo #wpforo-wrap .wpforo-post-content .wpf-video, #wpforo #wpforo-wrap .wpforo-post-content .wpf-video iframe{max-width: 98%;}
 #wpforo #wpforo-wrap .wpforo-revision-body .wpf-video, #wpforo #wpforo-wrap .wpforo-revision-body .wpf-video iframe{max-width: 98%;}
 #wpforo #wpforo-wrap .wpf-member-title{ display:block; cursor:default; }
+#wpforo #wpforo-wrap .wpf-author-title .wpf-member-cf:not(:last-of-type){ margin-right: 5px;}
 #wpforo #wpforo-wrap .wpf-member-title.wpfut{font-size:11px; line-height:15px; padding:2px 15px; margin:5px auto; border-radius: 15px;}
 #wpforo #wpforo-wrap .wpf-post-edit-wrap{ padding: 10px 0; margin: 20px 10px 20px; width: 90%; }
 #wpforo #wpforo-wrap .wpfl-2 .wpf-post-edit-wrap, #wpforo #wpforo-wrap .wpfl-3 .wpf-post-edit-wrap{ margin: 20px 0 10px; }
@@ -527,7 +528,7 @@ Author: gVectors Team
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post{text-align:left; padding:0 3px; width: 100%;}
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post p{line-height: 18px; width: calc(100% - 30px); overflow: hidden;}
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-title{font-size:13px; padding-top:7px;}
-#wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-title a{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; width: 100%;}
+#wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-title a{white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: inline; width: 100%;}
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-author{font-size:12px;}
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-avatar{text-align:left; padding:5px 7px 5px 2px;}
 #wpforo #wpforo-wrap .wpfl-2 .wpforo-last-post-avatar img{padding:1px; width:38px; height:38px;}
@@ -857,7 +858,7 @@ Author: gVectors Team
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:baseline;}
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author{display: flex; flex-wrap: wrap; flex-direction: row; justify-content: flex-start; align-items:flex-end; flex-grow: 1;}
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-nicename{ font-size: 13px; margin-right: 5px; line-height: 21px; padding-top: 0px;}
-        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-title{font-size:11px; margin-right: 7px;}
+        #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-title{font-size:11px; margin-right: 7px; display: flex;flex-direction: row; justify-content: flex-start; align-items: center;}
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-joined{font-size:11px;}
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-author-joined i{margin-right: 2px;}
         #wpforo #wpforo-wrap .wpfl-4 .wpf-parent-post .wpf-right .wpf-content-head-bottom .wpf-post-btns i{font-size: 12px; opacity: 0.8;}
@@ -1578,11 +1579,12 @@ body.wpf-dark #wpforo-dialog-extra-wrap #wpforo-dialog{background-color: #000; c
 /****************************************************/
 /************* wpForo front end messages  ***********/
 /****************************************************/
-#wpf-msg-box{display:none;position:fixed;top:21px;width:24%;right:0;margin-right:0.5%;z-index:99999999999;box-sizing: border-box;}
+#wpforo-notifications-bar{position:fixed;top:35px;right:0;margin-right:0.5%;z-index:99999999999;box-sizing: border-box;width:24%; overflow-x: hidden; overflow-y: auto; max-height: 92vh;}
+#wpf-msg-box{display:none;box-sizing: border-box;width:100%;}
 #wpf-msg-box a{text-decoration:underline;}
-#wpf-msg-box > p{width:100%;line-height: 20px;font-size:14px;position:relative;padding:15px; margin:0;cursor:pointer; box-shadow:1px 6px 26px 2px rgba(0, 0, 0, 0.5);box-sizing: border-box;}
-#wpf-msg-box > p:first-child:after{display:block;width:0;content:"";position:absolute;top:-20px;right:50px;border-width:20px 20px 0 0;border-style:solid;}
-#wpf-msg-box > p:first-child:before{display:block;width:0;content:"";position:absolute;top:-24px;right:49px;border-width:24px 24px 0 0;border-style:solid;border-color: rgba(0,0,0,0) rgba(0,0,0,0.02);}
+#wpf-msg-box > p{width:100%;line-height: 20px;font-size:14px;position:relative;padding:15px; margin:0;cursor:pointer; box-shadow:1px 6px 7px 1px rgba(0, 0, 0, 0.5);box-sizing: border-box;}
+/*#wpf-msg-box > p:first-child:after{display:block;width:0;content:"";position:absolute;top:-20px;right:50px;border-width:20px 20px 0 0;border-style:solid;}*/
+/*#wpf-msg-box > p:first-child:before{display:block;width:0;content:"";position:absolute;top:-24px;right:49px;border-width:24px 24px 0 0;border-style:solid;border-color: rgba(0,0,0,0) rgba(0,0,0,0.02);}*/
 #wpf-msg-box > p + p{margin-top: 12px;}
 
 .wpf-topic-create,.wpf-topic-form-extra-wrap{display: none;}
@@ -1591,7 +1593,7 @@ body.wpf-dark #wpforo-dialog-extra-wrap #wpforo-dialog{background-color: #000; c
 .wpf-topic-form-extra-wrap{padding: 10px 15px 0 !important;}
 .wpf-topic-added{color: green;background-color: #fff;-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);border: 5px;height: 22px;padding: 12px 11px;width: auto;box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);border-left: 4px solid #7ad03a;margin-bottom: 24px;}
 .wpf-post-create{width: auto;background-color: #f6f6f6;height: auto; border:1px solid #CFCFCF;}
-#wpforo-load{position: fixed; display: flex; flex-direction: column; align-items: center; max-width: 30%; overflow: hidden; visibility: hidden; top: 40px; right: 40px; z-index: 99999999999; text-align: center; font-size: 13px; font-weight: bold;}
+#wpforo-load{display: none; flex-direction: column; align-items: flex-end; overflow: hidden; text-align: center; padding-right: 15px; font-size: 13px; font-weight: bold; width: 100%; margin-bottom: 12px;}
 #wpforo-load .wpf-load-txt-wrap{margin-top: 5px; text-transform: capitalize;}
 .mce-container, .mce-container *, .mce-widget, .mce-widget *{ color: #333; }
 #wpforo #wpforo-wrap .wpf-suggested-topics-list{padding: 5px 10px; font-size: 13px; line-height: 20px;}
@@ -1959,7 +1961,7 @@ body.wpf-dark #wpforo-dialog-extra-wrap #wpforo-dialog{background-color: #000; c
     #wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-spost-user,
     #wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-shead-date,
     #wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-spost-date{ font-size:12px; line-height:14px;}
-    #wpf-msg-box { width:35%;}
+	#wpforo-notifications-bar { width:35%;}
     #wpforo #wpforo-wrap #wpforo-stat-body .wpf-stat-item{ width:31%}
     #wpforo #wpforo-wrap #wpforo-stat-body .wpf-stat-item{ border-right:none!important;}
 
@@ -2075,7 +2077,7 @@ body.wpf-dark #wpforo-dialog-extra-wrap #wpforo-dialog{background-color: #000; c
 	#wpforo #wpforo-wrap .wpf-search input[type="search"]:focus{ width:80%;}
 
 	#wpforo #wpforo-wrap .wpforo-activity-content .activity-icon{ display:none;}
-	#wpf-msg-box { width:45%;}
+	#wpforo-notifications-bar { width:45%;}
 	#wpforo #wpforo-wrap .wpf-navi .wpf-navi-wrap{white-space:normal;}
 
 	body.wpforo .mce-container.mce-panel.mce-floatpanel.mce-window.mce-in{left: 5%!important;right: 5%!important;width: 88%!important;}
@@ -2163,7 +2165,7 @@ body.wpf-dark #wpforo-dialog-extra-wrap #wpforo-dialog{background-color: #000; c
 	#wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-spost-user,
 	#wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-shead-date,
 	#wpforo #wpforo-wrap .wpforo-search-wrap .wpforo-search-content td.wpf-spost-date{visibility:hidden; width:0; font-size:0; line-height:0; padding:0;}
-	#wpf-msg-box{right: 10px;width:80%;}
+	#wpforo-notifications-bar{right: 10px;width:80%;}
 	#wpf-msg-box > p{font-size: 13px; line-height: 14px;}
 	#wpforo #wpforo-wrap .wpf-profile-section .wpf-statbox{width:100%;}
 	#wpforo #wpforo-wrap .wpforo-post-content .wpf-video,
