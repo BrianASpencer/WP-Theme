@@ -5,18 +5,11 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
 * Template Name:  Forum Index ( Forums List )
 */
+
 get_header();
 
-/*
-$logValue = WPF()->current_object['template'];
-
-$logFile = get_template_directory() . '/logs/log_0.log';
-
-error_log($logValue . PHP_EOL, 3, $logFile);
-*/
-
-
 if ( is_front_page() ) {
+    get_header();
     include_once get_template_directory() . '/custom/landing-page.php';
     get_footer();
     exit();

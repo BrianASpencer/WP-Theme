@@ -3,7 +3,11 @@
 if (!defined('ABSPATH')) {
     exit;
 }
+/*
+NOTE: This, along with other pages have been moved to shortcodes (see shortcode folder)
+*/
 ?>
+
 
 <style>
     <?php 

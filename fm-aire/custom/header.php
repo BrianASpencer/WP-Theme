@@ -12,9 +12,13 @@ if (!defined('ABSPATH')) {
 
 <header class="site-header">
     <?php 
-        include_once get_template_directory() . '/custom/top-header.php';
-        include_once get_template_directory() . '/custom/bottom-header.php';
-        include_once get_template_directory() . '/custom/mobile-header.php';
+        if (is_user_logged_in()) {
+        include_once get_template_directory() . '/custom/logged-in-header.php';
+        } else {
+            include_once get_template_directory() . '/custom/top-header.php';
+            include_once get_template_directory() . '/custom/bottom-header.php';
+            include_once get_template_directory() . '/custom/mobile-header.php';
+        }
     ?>
 </header>
 
