@@ -13,7 +13,7 @@ if (!defined('ABSPATH')) {
 <header class="site-header">
     <?php 
         if (is_user_logged_in()) {
-        include_once get_template_directory() . '/custom/logged-in-header.php';
+            include_once get_template_directory() . '/custom/logged-in-header.php';
         } else {
             include_once get_template_directory() . '/custom/top-header.php';
             include_once get_template_directory() . '/custom/bottom-header.php';
@@ -29,6 +29,10 @@ if (!defined('ABSPATH')) {
             const topHeader = document.querySelector('.top-header');
             const bottomHeader = document.querySelector('.bottom-header');
             const mobileHeader = document.querySelector('.mobile-header');
+            
+            if (!topHeader || !bottomHeader || !mobileHeader) {
+                return;
+            }
 
             if (window.innerWidth <= 767) {
                 bottomHeader.style.display = 'none';

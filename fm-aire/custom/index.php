@@ -6,7 +6,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 * Template Name:  Forum Index ( Forums List )
 */
 
+/*
+NOTE: This is not currently being used,
+      only the wpForo index.php is being used.
+*/
+
 get_header();
+
 
 if ( is_front_page() ) {
     get_header();
@@ -14,6 +20,7 @@ if ( is_front_page() ) {
     get_footer();
     exit();
 }
+
 
 do_action( 'wpforo_content_start' );
 
