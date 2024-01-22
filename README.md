@@ -39,6 +39,22 @@ get_footer();
 
 
 # Troubleshooting
+If the add topic and other wpForo buttons aren't working and the styling isn't being loaded, modify the standalone checks in the wpForo index.php file (in the theme):
+```
+header:
+if( WPF()->board->get_current( 'is_standalone' ) ) {
+    wp_head();
+    get_header();
+}
+
+...
+
+footer:
+if( WPF()->board->get_current( 'is_standalone' ) ) {
+    wp_footer();
+    get_footer();
+}  
+```
 Forum post about adding a new page template:
 https://wpforo.com/community/how-to-and-troubleshooting-2/how-to-add-a-page-template/
 
