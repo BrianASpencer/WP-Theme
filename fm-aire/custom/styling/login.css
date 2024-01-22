@@ -5,7 +5,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     width: 30%;
-    margin: 5em auto;
+    margin: 7% auto;
 }
 
 .form-header {
@@ -87,20 +87,34 @@
         width: 35%;
     }
     
+    .form-description {
+        width: 60%;
+    }
+    
 }
 @media (min-width: 1000px) and (max-width: 1367px) {
     .login-form {
         width: 50%;
+    }
+    
+    .form-description {
+        width: 60%;
     }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
     .login-form {
         width: 70%;
     }
+    
+    c
 }
 
 @media (max-width: 768px) {
     .login-form {
         width: 90%;
+    }
+    
+    .form-description {
+        width: 60%;
     }
 }

@@ -5,7 +5,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     width: 25%;
-    margin: 5em auto;
+    margin: 6.5% auto;
 }
 
 #contact-form-container h2 {
@@ -15,20 +15,20 @@
     text-align: center;
 }
 
-#form-inputs {
+#contact-form-inputs {
     margin-left: 10%;
 }
 
-.form-row {
+.contact-form-row {
     margin: 15px auto;
 }
 
-.form-row input {
+.contact-form-row input {
     border: 1px solid #EAEDF5;
     border-radius: 5px;
 }
 
-.form-row label {
+.contact-form-row label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -43,16 +43,13 @@
     margin: 0 auto;
 }
 
-#message {
-    width: 80%;
-}
-
 #submit-btn {
     background-color: #da222b;
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-top: 1.5em;
 }
 
 .success-message {
