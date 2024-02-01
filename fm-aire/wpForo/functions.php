@@ -9,8 +9,6 @@ if( ! defined( 'ABSPATH' ) ) exit;
  * @theme: Classic
  */
 
-
-
 include_once( wpftpl( 'layouts/4/forum-thread.php' ) );
 include_once( wpftpl( 'layouts/4/topic-thread.php' ) );
 include_once( wpftpl( 'layouts/4/post-thread.php' ) );
@@ -67,7 +65,7 @@ function wpforo_topic_head_top( $forum, $topic ){
                 </svg>
                 <span class=""><?php wpforo_phrase( 'Last Post' ); ?></span>
             </a>
-            <span><?php wpforo_phrase( 'by', true, 'lower' ) ?></span> <?php wpforo_member_link( wpforo_member( wpforo_post( $topic['last_post'], 'userid' ) ) ) ?> <?php wpforo_date( wpforo_post( $topic['last_post'], 'created' ) ) ?>
+			<span><?php wpforo_phrase( 'by', true, 'lower' ) ?></span> <?php wpforo_member_link( wpforo_member( wpforo_post( $topic['last_post'], 'userid' ) ) ) ?> <span class="wpforo-date wpforo-date-ago"><?php wpforo_date( wpforo_post( $topic['last_post'], 'created' ) ) ?></span>
 			<?php do_action( 'wpforo_topic_head_left', $forum, $topic ) ?>
         </div>
     </div>

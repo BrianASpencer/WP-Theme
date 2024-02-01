@@ -1272,6 +1272,22 @@ Author: gVectors Team
 
 #wpforo #wpforo-wrap .wpf-topic-sbs{padding: 0 20px;}
 
+#wpforo #wpforo-wrap .wpforo-main.wpforo-left-sidebar-layout .wpforo-content{
+	float: right;
+}
+
+#wpforo #wpforo-wrap .wpforo-main.wpforo-left-sidebar-layout .wpforo-right-sidebar{
+	float: left;
+}
+
+#wpforo #wpforo-wrap .wpforo-main.wpforo-right-sidebar-layout .wpforo-content{
+	float: left;
+}
+
+#wpforo #wpforo-wrap .wpforo-main.wpforo-right-sidebar-layout .wpforo-right-sidebar{
+	float: right;
+}
+
 /****************************************************/
 /******************* wpForo Tags ********************/
 /****************************************************/

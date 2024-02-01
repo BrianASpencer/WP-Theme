@@ -1,13 +1,10 @@
 <?php
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) exit;
+if( ! defined( 'ABSPATH' ) ) exit;
 
 /**
-* Template Name:  Forum Index ( Forums List )
-*/
-
-//include_once get_template_directory() . '/custom/index.php';
-//exit();
+ * Template Name:  Forum Index (Forums List)
+ */
 
 if ( is_front_page() ) {
     get_header();
@@ -16,15 +13,18 @@ if ( is_front_page() ) {
     exit();
 }
 
-
-if ( WPF()->board->get_current( 'is_standalone' ) ) get_header();
+if( WPF()->board->get_current( 'is_standalone' ) ) {
+    wp_head();
+    get_header();
+}
 ?>
 <div id="wpforo">
     <div id="wpforo-wrap" class="<?php do_action( 'wpforo_wrap_class' ); ?>">
 
-        <?php if( wpforo_display_header() ) include( wpftpl( 'header.php' ) ); ?>
+        <?php if( wpforo_display_header() ) include( wpftpl( 'header.php' ) ); 
+        ?>
 
-        <div class="wpforo-main">
+        <div class="wpforo-main <?php wpforo_main_wrap_classes(); ?>">
             <div class="wpforo-content <?php if( wpforo_setting( 'social', 'sb_location_toggle' ) === 'right' ) echo 'wpfrt' ?>" <?php echo is_active_sidebar( wpforo_prefix( 'sidebar' ) ) ? '' : 'style="width:100%"' ?>>
                 <?php do_action( 'wpforo_content_start' ); ?>
                 <?php if( ! in_array( WPF()->current_user_status, [ 'banned', 'trashed' ] ) ) :
@@ -70,5 +70,11 @@ if ( WPF()->board->get_current( 'is_standalone' ) ) get_header();
     </div><!-- wpforo-wrap -->
 </div>
 
-<?php if ( WPF()->board->get_current( 'is_standalone' ) ) get_footer();
+
+
+<?php 
+if( WPF()->board->get_current( 'is_standalone' ) ) {
+    wp_footer();
+    get_footer();
+}  
 ?>

@@ -53,7 +53,7 @@ $posts  = WPF()->current_object['posts'];
                     <tr class="wpf-ptr">
                         <td class="wpf-spost-icon">&nbsp;</td>
                         <td colspan="5" class="wpf-stext">
-							<?php echo wpforo_sanitize_search_body( $post['body'], $args['needle'] ); ?>
+							<?php echo wpforo_sanitize_search_body( $post['body'], $args['needle'], $post ); ?>
                         </td>
                     </tr>
 				<?php else: ?>

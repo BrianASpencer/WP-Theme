@@ -13,15 +13,15 @@ $subscribes = (array) wpfval( WPF()->current_object, 'subscribes' );
         <div class="wpforo-sbs">
 			<?php foreach( $subscribes as $subscribe ) : ?>
 				<?php
+				$item_url = '#';
 				if( in_array( $subscribe['type'], [ 'forum', 'forum-topic' ] ) ) {
 					$item     = WPF()->forum->get_forum( $subscribe['itemid'] );
-					$item_url = WPF()->forum->get_forum_url( $item['forumid'] );
+					if( !empty( $item ) ) $item_url = WPF()->forum->get_forum_url( $item['forumid'] );
 				} elseif( $subscribe['type'] === 'topic' ) {
 					$item     = WPF()->topic->get_topic( $subscribe['itemid'] );
-					$item_url = WPF()->topic->get_url( $item['topicid'] );
+					if( !empty( $item ) ) $item_url = WPF()->topic->get_url( $item['topicid'] );
 				} elseif( in_array( $subscribe['type'], [ 'forums', 'forums-topics' ] ) ) {
 					$item     = [ 'title' => wpforo_phrase( 'All ' . $subscribe['type'], false ) ];
-					$item_url = '#';
 				}
 				if( empty( $item ) ) continue;
 				?>

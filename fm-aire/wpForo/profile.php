@@ -54,10 +54,10 @@ if( !wpforo_setting('profiles', 'avatars') ): ?>
 
     <div class="wpforo-profile-head-bottom">
         <div class="wpfp-box wpfp-ug">
-            <?php wpforo_member_title($user, true,'', '', ['rating-title', 'custom-title']) ?>
+            <?php wpforo_member_title($user, true,'', '', ['custom-fields', 'rating-title', 'custom-title']) ?>
         </div>
         <div class="wpfp-box wpfp-reputation">
-            <?php wpforo_member_title($user, true,'', '', ['usergroup']) ?>
+            <?php wpforo_member_title($user, true,'', '', ['custom-fields', 'usergroup']) ?>
             <?php wpforo_member_badge($user) ?>
         </div>
         <div class="wpfp-flex"><?php do_action( 'wpforo_after_member_badge_right', $user ); ?></div>

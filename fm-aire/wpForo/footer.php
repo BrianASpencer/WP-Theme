@@ -85,7 +85,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
                     <span><i class="far fa-file wpfcl-2"></i> <?php wpforo_phrase( 'Not Replied' ) ?></span>
                     <span><i class="far fa-file-alt wpfcl-2"></i> <?php wpforo_phrase( 'Replied' ) ?></span>
                     <span><i class="fas fa-file-alt wpfcl-2"></i> <?php wpforo_phrase( 'Active' ) ?></span>
-                    <span><i class="fa-brands fa-hotjar wpfcl-5"></i> <?php wpforo_phrase( 'Hot' ) ?></span>
+                    <span><i class="fa-solid fa-fire-flame-curved wpfcl-5"></i> <?php wpforo_phrase( 'Hot' ) ?></span>
                     <span><i class="fas fa-thumbtack wpfcl-10"></i> <?php wpforo_phrase( 'Sticky' ) ?></span>
                     <span><i class="fas fa-exclamation-circle wpfcl-5"></i> <?php wpforo_phrase( 'Unapproved' ) ?></span>
                     <span><i class="fas fa-check-circle wpfcl-8"></i> <?php wpforo_phrase( 'Solved' ) ?></span>

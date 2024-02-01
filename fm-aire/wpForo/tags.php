@@ -3,15 +3,6 @@
 // Exit if accessed directly
 if( ! defined( 'ABSPATH' ) ) exit;
 
-/*
-The hack going on here is:
- 1. go to wpForo settings -> Board Settings -> /tags and change it to contact-us (or whatever page)
- 2. Add logic here to show that page.
- 
- NOTE: No longer needed. Adding a page in WP and creating page-<page_title>.php file to hold its contents will work.
-*/
-//include_once get_template_directory() . '/custom/contact-us.php';
-//exit();
 ?>
 <div class="wpforo-tags-wrap">
     <div class="wpf-head-bar">
@@ -53,8 +44,12 @@ The hack going on here is:
 		<?php if( wpforo_is_module_enabled( 'tags' ) ): ?>
 			<?php if( $tags = WPF()->current_object['tags'] ): ?>
 				<?php foreach( $tags as $tag ): ?>
-                    <tag><a href="<?php echo wpforo_home_url() . '?wpfin=tag&wpfs=' . $tag['tag'] ?>"><?php echo esc_html( $tag['tag'] ); ?><?php if( $tag['count'] ) echo ' &nbsp;[' . $tag['count'] . ']&nbsp;'; ?></a></tag>
-				<?php endforeach ?>
+                    <?php if(is_rtl()): ?>
+                        <tag><a href="<?php echo wpforo_home_url() . '?wpfin=tag&wpfs=' . $tag['tag'] ?>"><?php if( $tag['count'] ) echo '[' . $tag['count'] . ']&nbsp;'; ?><?php echo esc_html( $tag['tag'] ); ?> &nbsp;</a></tag>
+                    <?php else: ?>
+                        <tag><a href="<?php echo wpforo_home_url() . '?wpfin=tag&wpfs=' . $tag['tag'] ?>"><?php echo esc_html( $tag['tag'] ); ?><?php if( $tag['count'] ) echo ' &nbsp;[' . $tag['count'] . ']&nbsp;'; ?></a></tag>
+                    <?php endif; ?>
+                <?php endforeach ?>
 			<?php else: ?>
                 <p class="wpf-p-error"><?php wpforo_phrase( 'No tags found' ) ?>  </p>
 			<?php endif; ?>

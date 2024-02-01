@@ -27,15 +27,18 @@ $members = WPF()->current_object['members'];
                     </div>
 
                     <div class="wpf-members-info">
-                        <?php $ug = wpforo_member_title($member, false, '', '', ['rating-title', 'custom-title']) ?>
+                        <?php $ug = wpforo_member_title($member, false, '', '', ['custom-fields', 'rating-title', 'custom-title']) ?>
                         <?php if( $ug ): ?>
                             <div class="wpforo-member-ug">
                                 <?php echo $ug ?>
                             </div>
                         <?php endif; ?>
                         <div class="wpforo-member-reputation">
-                            <?php wpforo_member_title($member, true, '', '', ['usergroup']) ?>
+                            <?php wpforo_member_title($member, true, '', '', ['custom-fields', 'usergroup']) ?>
                             <?php wpforo_member_badge($member) ?>
+                        </div>
+                        <div class="wpforo-member-info-after-reputation">
+                            <?php do_action( 'wpforo_after_member_reputation', $member ) ?>
                         </div>
                         <div class="wpforo-member-joined">
                             <?php wpforo_phrase('Joined:') ?> <?php wpforo_date( $member['user_registered'], 'date' ) ?>
@@ -63,7 +66,7 @@ $members = WPF()->current_object['members'];
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </div>
-                        <div>
+                        <div class="wpforo-member-info-after-all">
                             <?php do_action( 'wpforo_after_member_details', $member ) ?>
                         </div>
                     </div>

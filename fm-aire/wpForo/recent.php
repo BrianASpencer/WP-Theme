@@ -28,7 +28,7 @@ $days = apply_filters( 'wpforo_recent_posts_limit', 30 );
 if( $type === 'topics' ) {
 	$end_date = time() - ( intval( $days ) * 24 * 60 * 60 );
 	if( wpfval( $args, 'prefixid' ) ) $args['prefix'] = (int) wpfval( $args, 'prefixid' );
-	$args['where']     = "`modified` > '" . date( 'Y-m-d H:i:s', $end_date ) . "'";
+	$args['where']     = "`modified` > '" . gmdate( 'Y-m-d H:i:s', $end_date ) . "'";
 	$args['orderby']   = ( ! empty( WPF()->GET['wpfob'] ) ) ? sanitize_text_field( WPF()->GET['wpfob'] ) : 'modified';
 	$args['order']     = 'DESC';
 	$args['offset']    = ( $paged - 1 ) * wpforo_setting( 'topics', 'topics_per_page' );
@@ -70,7 +70,7 @@ if( $type === 'topics' ) {
 	$topics = $view === 'no-replies' && empty( $args['include'] ) ? [] : WPF()->topic->get_topics( $args, $items_count );
 } else {
 	$end_date = time() - ( intval( $days ) * 24 * 60 * 60 );
-	if( $view !== 'unapproved' ) $args['where'] = "`created` > '" . date( 'Y-m-d H:i:s', $end_date ) . "'";
+	if( $view !== 'unapproved' ) $args['where'] = "`created` > '" . gmdate( 'Y-m-d H:i:s', $end_date ) . "'";
 	$args['orderby']   = ( ! empty( WPF()->GET['wpfob'] ) ) ? sanitize_text_field( WPF()->GET['wpfob'] ) : 'created';
 	$args['order']     = 'DESC';
 	$args['offset']    = ( $paged - 1 ) * wpforo_setting( 'topics', 'posts_per_page' );
@@ -307,7 +307,7 @@ if( $type === 'topics' ) {
                                 <td class="wpf-spost-icon">&nbsp;</td>
                                 <td colspan="2" class="wpf-stext">
                                     <?php
-                                    $body = wpforo_content_filter( $body );
+                                    $body = wpforo_content_filter( $body, $post );
                                     $body = preg_replace( '#\[attach][^\[\]]*\[/attach]#i', '', strip_tags( $body ) );
                                     wpforo_text( $body, 200 );
                                     ?>
