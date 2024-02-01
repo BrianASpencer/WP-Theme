@@ -685,21 +685,21 @@ body.wpf-dark #wpf-msg-box a:hover, body.wpf-dark #wpf-msg-box a:active{color:__
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-grey .wpf-sb-button{background: #aaaaaa; color: #ffffff; }
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-grey .wpf-sb-button.wpf-sb-icon{background: transparent; color: #777777; border: 1px solid #bbbbbb;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-fb .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-fb i:hover{ color: #4267b2!important;}
-#wpforo #wpforo-wrap .wpf-sb .wpf-tw .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-tw i:hover{ color: #1DA1F2!important;}
+#wpforo #wpforo-wrap .wpf-sb .wpf-tw .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-tw i:hover{ color: #232323 !important;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-wapp .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-wapp i:hover{ color: #1BD741!important;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-lin .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-lin i:hover{ color: #0A75B5!important;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-gg .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-gg i:hover{ color: #DB4437!important;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-vk .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-vk i:hover{ color: #4A76A8!important;}
 #wpforo #wpforo-wrap .wpf-sb .wpf-ok .wpfsa, #wpforo #wpforo-wrap .wpf-sb .wpf-ok i:hover{ color: #EE8208!important;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-fb:hover{ background-color: #4267b2; border-color: #4267b2; color: #fff;}
-#wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-tw:hover{ background-color: #1DA1F2; border-color: #1DA1F2; color: #fff;}
+#wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-tw:hover{ background-color: #252525; border-color: #2c2c2c; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-lin:hover{ background-color: #0A75B5; border-color: #0A75B5; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-wapp:hover{ background-color: #1BD741; border-color: #1BD741; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-gg:hover{ background-color: #DB4437; border-color: #DB4437; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-vk:hover{ background-color: #4A76A8; border-color: #4A76A8; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn .wpf-sb-button.wpf-ok:hover{ background-color: #EE8208; border-color: #EE8208; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-fb{ background-color: #4267b2; border-color: #4267b2; color: #fff;}
-#wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-tw{ background-color: #1DA1F2; border-color: #1DA1F2; color: #fff;}
+#wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-tw{ background-color: #1a1a1a; border-color: #2a2a2a; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-wapp{ background-color: #1BD741; border-color: #1BD741; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-lin{ background-color: #0A75B5; border-color: #0A75B5; color: #fff;}
 #wpforo #wpforo-wrap .wpf-sbtn.wpf-sb-style-colored .wpf-sb-button.wpf-gg{ background-color: #DB4437; border-color: #DB4437; color: #fff;}
