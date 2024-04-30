@@ -18,7 +18,7 @@ if (!defined('ABSPATH')) {
         <img src="<?php echo get_template_directory_uri() . '/assets/FM-AIRE Logo - Solid White.png'; ?>" alt="Solid White FM-AIRE Logo">
         <!-- centered description -->
         <span>
-            Nec ullamcorper sit amet risus. Hac habitasse platea dictumst vestibulum rhoncus est pellente sque. Laoreet suspe ndisse interim
+            FM-AIRE: an Accreditation Council for Graduate Medical Education and American Board of Family Medicine Collaboration
         </span>
         <!-- phone nunber with vertical pipe and then email address -->
         <br><br>
@@ -34,7 +34,7 @@ if (!defined('ABSPATH')) {
     </div>
     <div class="footer-bottom-content">
         <span>
-            © Copyright 2012 - 2023
+            © Copyright 2012 - 2024
             &nbsp;&nbsp;|&nbsp;&nbsp;
             The American Board of Family Medicine
             &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -43,7 +43,7 @@ if (!defined('ABSPATH')) {
     </div>
     <div class="mobile-footer-bottom-content">
         <div class="mobile-spacer">
-            <span>© Copyright 2012 - 2023</span>
+            <span>© Copyright 2012 - 2024</span>
         </div>
         <div class="mobile-spacer">
             <span>The American Board of Family Medicine</span>
