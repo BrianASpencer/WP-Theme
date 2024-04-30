@@ -29,6 +29,28 @@
     font-size: 20px;
     margin-bottom: 0;
 }
+.blue-square-bullets {
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+.blue-square-bullets li {
+	color: black;
+	position: relative;
+	padding-left: 1.5em;
+	padding-bottom: 0.5em;
+}
+.blue-square-bullets li::before {
+	content: "■";
+	color: #3368b8;
+	position: absolute;
+	left: 0;
+	top: -2px;
+}
+
+.vertical-spacer {
+	height: 0.5em;
+}
 
 .top {
     margin-top: 0;
@@ -68,6 +90,16 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+
+.start-application-button {
+	background-color: #3368b8;
+	color: #fff;
+	padding: 10px 25px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
 }
 
 /* 75/25 info card styling */
