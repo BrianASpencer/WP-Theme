@@ -207,11 +207,22 @@ function landing_info_cards_shortcode() {
 
     // Output HTML for the landing info cards
     ob_start();
+	
+	$info_card_1_title = 'What is FM-AIRE?';
+	$info_card_2_title = 'Who is eligible to submit proposals?';
+	
+	$info_card_1_left = "<span>FM-AIRE is a GME Innovation pilot sponsored by the ACGME and ABFM, exploring outcomes of 4-year family medicine residency training and time variable training beyond 36 months.</span><br><br><span>This initiative is designed to solicit and explore GME innovations from family medicine residencies that want to expan the length of training to:</span><ol><li>develop advanced expertise and clinical mastery in family medicine that prepare graduates for contemporary and innovative practice</li><br><li>incorporate and expand principles of competency-based medical education</li><br><li>enhance the social responsiveness and community engagement of family medicine residency programs</li></ol>";
+	
+	$info_card_2_left = '<span>Family medicine residency programs and their sponsoring institutions with promising educational and clinical designs that want to:</span><br><br><ul class="blue-square-bullets"><li>test extending family medicine residency training time beyond 36 months</li><li>share what is learned with the family medicine community</li><li>advance the newly revised specialty program requirements</li></ul>';
+	
+	$info_card_1_right = '<h3 class="info-card-subheader top">Possible Innovations</h3><br><span>We\'re looking for programs interested in extending pathways beyond 36 months.</span><br><span>That can mean:</span><ul class="blue-square-bullets"><li>Integrated, longitudinal fellowships that allow residents to expand the scope of practice over the length of their residency, (not only after the third year), adding qualifications that expand comprehensiveness of care</li><li>Fully-integrated four year residency focused on holistic professional development geared toward mastery</li><li>Comprehensive Family Medicine training with concetrations in specific areas of expertise, that move graduates further towards mastery in some particular domain of family medicine care, or leadership</li></ul>';
+	
+	$info_card_2_right = '<h3 class="info-card-subheader top">Questions?</h3><br><a href="https://test.fmaire.org/contact-us/">Contact us</a><br><br><br><h3 class="info-card-subheader top">Ready to Get Started?</h3><br><span>Start an application join the AIRE community by selecting the button below.</span><br><br><div style="text-align: center"><button type="button" class="start-application-button">Start an Application</button></div>';
 
     
-    info_card('What is FM-AIREE?', '<strong>'.$left_content.$sub_header.$left_content_bottom_short.'</strong>', $sub_header_top.'<strong>'.$right_content.'</strong><br><br>'.$find_out_button);
-    info_card('Who is eligible to apply', $left_content.$sub_header.$left_content_bottom_short, $sub_header_top.$right_content.'<br><br>'.$find_out_button);
-    info_card('What are the priorities for Innovation?', $left_content.$sub_header.$left_content_bottom_short, $sub_header_top.$right_content.'<br><br>'.$find_out_button);
+    info_card($info_card_1_title, $info_card_1_left, $info_card_1_right);
+	info_card($info_card_2_title, $info_card_2_left, $info_card_2_right);
+    //info_card('Who is eligible to apply', $left_content.$sub_header.$left_content_bottom_short, $sub_header_top.$right_content.'<br><br>'.$find_out_button);
     
     
     $list_subheader_doc = '<h3 class="info-card-subheader top">Document Link list</h3>';
@@ -223,7 +234,7 @@ function landing_info_cards_shortcode() {
         <li>pellentesque. Laoreet</li>
         <li>Consectetur libero id</li>
     </ul>';
-    info_card_75_25('How do we apply?', $left_content.$sub_header.$left_content_bottom_long.'<br><br>'.$find_out_button, $list_subheader_doc.$list.$list_subheader_res.$list);
+    //info_card_75_25('How do we apply?', $left_content.$sub_header.$left_content_bottom_long.'<br><br>'.$find_out_button, $list_subheader_doc.$list.$list_subheader_res.$list);
 
     // Get the buffered content
     $output = ob_get_clean();
