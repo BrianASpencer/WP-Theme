@@ -145,9 +145,9 @@
 
 @media (max-width: 768px) {
     .info-card {
-        width: 85%;
+        width: 90%;
     }
     .info-card.info-card-75-25 {
-        width: 85%;
+        width: 90%;
     }
 }
